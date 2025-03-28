@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect } from 'react';
+import Image from 'next/image';
 
 export default function Navbar() {
   useEffect(() => {
@@ -10,25 +11,31 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
       <div className="container">
         <Link href="/" className="navbar-brand">
-          OLD WEST SOLUTIONS
+          <Image
+            src="/logo.png"
+            alt="Old West Solutions"
+            width={40}
+            height={40}
+            className="d-inline-block align-text-top me-2"
+          />
+          Old West Solutions
         </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-          </ul>
+        <div className="navbar-nav ms-auto">
+          <Link href="/" className="nav-link">
+            Home
+          </Link>
+          <Link href="/domains" className="nav-link">
+            Domains
+          </Link>
+          <Link href="/networks" className="nav-link">
+            Networks
+          </Link>
+          <Link href="/servers" className="nav-link">
+            Servers
+          </Link>
         </div>
       </div>
     </nav>

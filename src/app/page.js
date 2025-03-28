@@ -20,7 +20,7 @@ export default function Home() {
                 <p className="lead">Your trusted partner in premium domain brokerage and professional web solutions</p>
                 <div className="mt-4">
                   <a href="#contact" className="btn btn-primary me-3">Portfolio</a>
-                  <a href="#services" className="btn btn-outline-primary">Solution</a>
+                  <a href="#services" className="btn btn-outline-primary">Solutions</a>
                 </div>
               </div>
               <div className="row justify-content-center">
