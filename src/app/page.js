@@ -76,65 +76,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Duplicated Services Section */}
-      <section className="service-section bg-light">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6 mb-4">
-              <div className="service-column">
-                <h2 className="service-title">Do more your way</h2>
-                <p className="service-description">
-                  Optimize what matters most to you and your business. Our domain and template solutions help you work smarter, not harder.
-                </p>
-                <ul className="service-features">
-                  <li className="service-feature">
-                    <i className="bi bi-check-circle"></i>
-                    <span>90% faster domain acquisition process</span>
-                  </li>
-                  <li className="service-feature">
-                    <i className="bi bi-check-circle"></i>
-                    <span>Voted #1 domain brokerage platform by industry experts</span>
-                  </li>
-                  <li className="service-feature">
-                    <i className="bi bi-check-circle"></i>
-                    <span>Easy automation with hundreds of pre-built website templates</span>
-                  </li>
-                </ul>
-                <Link href="/services" className="btn btn-primary service-cta">
-                  Get started
-                </Link>
-              </div>
-            </div>
-
-            <div className="col-md-6 mb-4">
-              <div className="service-column">
-                <h2 className="service-title">Confidently manage assets</h2>
-                <p className="service-description">
-                  Secure your digital ecosystem with the right fit of domains, templates, and resources for your business growth.
-                </p>
-                <ul className="service-features">
-                  <li className="service-feature">
-                    <i className="bi bi-check-circle"></i>
-                    <span>Premium domain portfolio management following industry standards</span>
-                  </li>
-                  <li className="service-feature">
-                    <i className="bi bi-check-circle"></i>
-                    <span>Fortune 500 level expertise in domain valuation and acquisition</span>
-                  </li>
-                  <li className="service-feature">
-                    <i className="bi bi-check-circle"></i>
-                    <span>Comprehensive suite of services from domain search to website launch</span>
-                  </li>
-                </ul>
-                <Link href="/security" className="btn btn-primary service-cta">
-                  Learn More
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Features Grid Section */}
       <section className="features-section py-5">
         <div className="container">
