@@ -195,7 +195,7 @@ a {
 /* Hero Section */
 .hero-section {
   position: relative;
-  min-height: 100vh;
+  min-height: 110vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -207,6 +207,7 @@ a {
   transform: translateX(-50%);
   margin-top: -76px;
   padding-top: 76px;
+  margin-bottom: 0;
 }
 
 .hero-section::before {
@@ -369,7 +370,9 @@ a {
 
 @media (max-width: 768px) {
   .hero-section {
+    min-height: 110vh;
     padding-top: 100px;
+    margin-bottom: 0;
   }
   
   .hero-section h1 {
@@ -383,6 +386,10 @@ a {
   .hero-section .btn {
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
+  }
+  
+  .welcome-bubble {
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -955,12 +962,16 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(to bottom, #1a1a2e, #16213e);
   color: var(--text-light);
   padding: 4rem 0;
+  padding-top: 8rem;
+  margin-top: -6rem;
+  position: relative;
+  z-index: 2;
 }
 
 .text-bubble {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  padding: 1rem;
+  padding: 1.25rem;
   height: auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   backdrop-filter: blur(10px);
@@ -968,6 +979,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-light);
   max-width: 400px;
   margin: 0 auto;
+  margin-bottom: 1.5rem;
 }
 
 .text-bubble:hover {
@@ -996,6 +1008,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 2rem;
   max-width: 600px;
   margin: 0 auto;
+  margin-bottom: 2rem;
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 15px;
 }
