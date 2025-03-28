@@ -19,11 +19,18 @@ export default function Navbar() {
             alt="Old West Solutions"
             width={40}
             height={40}
-            className="d-inline-block align-text-top me-2"
+            className="d-inline-block align-text-top me-2 d-none d-md-inline-block"
           />
-          Old West Solutions
+          <Image
+            src="/logo.png"
+            alt="Old West Solutions"
+            width={32}
+            height={32}
+            className="d-inline-block align-text-top me-2 d-md-none"
+          />
+          <span className="d-none d-md-inline">Old West Solutions</span>
         </Link>
-        <div className="navbar-nav ms-auto">
+        <div className="navbar-nav ms-auto d-none d-md-flex">
           <Link href="/" className="nav-link">
             Home
           </Link>
