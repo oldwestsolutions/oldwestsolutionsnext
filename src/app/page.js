@@ -6,13 +6,48 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="hero-section text-center py-5">
+      <section className="hero-section">
+        <div className="cloud"></div>
+        <div className="cloud"></div>
+        <div className="cloud"></div>
+        <div className="cloud"></div>
+        <div className="cloud"></div>
         <div className="container">
-          <h1 className="display-3 fw-bold mb-4">Welcome to Old West Solutions</h1>
-          <p className="lead mb-4">Your trusted partner in premium domain brokerage and professional web solutions</p>
-          <div className="d-flex justify-content-center gap-3">
-            <Link href="/domains" className="btn btn-primary btn-lg">Explore Domains</Link>
-            <Link href="/contact" className="btn btn-outline-primary btn-lg">Contact Us</Link>
+          <div className="row justify-content-center">
+            <div className="col-md-8">
+              <div className="welcome-bubble text-center mb-4">
+                <h1>Welcome to Old West Solutions</h1>
+                <p className="lead">Your trusted partner in premium domain brokerage and professional web solutions</p>
+                <div className="mt-4">
+                  <a href="#contact" className="btn btn-primary me-3">Portfolio</a>
+                  <a href="#services" className="btn btn-outline-primary">Solution</a>
+                </div>
+              </div>
+              <div className="row justify-content-center">
+                <div className="col-md-4 mb-3">
+                  <div className="text-bubble text-center">
+                    <h3>Premium Domains</h3>
+                    <p>Access our exclusive collection of high-value domain names</p>
+                  </div>
+                </div>
+                <div className="col-md-4 mb-3">
+                  <Link href="/networks" className="text-decoration-none">
+                    <div className="text-bubble text-center">
+                      <h3>Networks</h3>
+                      <p>Professional web development and hosting services</p>
+                    </div>
+                  </Link>
+                </div>
+                <div className="col-md-4 mb-3">
+                  <Link href="/servers" className="text-decoration-none">
+                    <div className="text-bubble text-center">
+                      <h3>Servers</h3>
+                      <p>Dedicated assistance for all your digital needs</p>
+                    </div>
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -49,7 +84,7 @@ export default function Home() {
 
             <div className="col-md-6 mb-4">
               <div className="service-column">
-                <h2 className="service-title">Confidently manage assets</h2>
+                <h2 className="service-title">Manage Assets</h2>
                 <p className="service-description">
                   Secure your digital ecosystem with the right fit of domains, templates, and resources for your business growth.
                 </p>
@@ -113,7 +148,7 @@ export default function Home() {
             <div className="col-md-4 mb-4">
               <div className="stat-card">
                 <h3 className="display-4 fw-bold text-primary">25,000+</h3>
-                <p className="lead">Successful Domain Transfers</p>
+                <p className="lead">Domain Transfers</p>
               </div>
             </div>
             <div className="col-md-4 mb-4">
