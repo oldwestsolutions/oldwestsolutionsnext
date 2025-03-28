@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import './globals.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from '@/components/Navbar';
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         <main className="container my-4">
           {children}
         </main>
+        <Analytics />
         <footer>
           <div className="container">
             <div className="row">
