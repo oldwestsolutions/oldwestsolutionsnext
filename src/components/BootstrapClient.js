@@ -4,8 +4,15 @@ import { useEffect } from 'react';
 
 export default function BootstrapClient() {
   useEffect(() => {
-    // Import Bootstrap JS only on the client side
-    import('bootstrap/dist/js/bootstrap.bundle.min.js');
+    const loadBootstrap = async () => {
+      try {
+        await import('bootstrap/dist/js/bootstrap.bundle.min.js');
+      } catch (error) {
+        console.error('Error loading Bootstrap:', error);
+      }
+    };
+    
+    loadBootstrap();
   }, []);
 
   return null;
