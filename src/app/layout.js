@@ -1,8 +1,8 @@
 import { Analytics } from "@vercel/analytics/react";
 import './globals.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from '@/components/Navbar';
-import BootstrapClient from '@/components/BootstrapClient';
+import Navbar from '../components/Navbar';
+import BootstrapClient from '../components/BootstrapClient';
 import Link from 'next/link';
 
 export const metadata = {
