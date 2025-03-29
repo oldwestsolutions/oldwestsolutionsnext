@@ -26,15 +26,13 @@ export default function Home() {
               <div className="row justify-content-center">
                 <div className="col-md-4 mb-3">
                   <div className="text-bubble text-center">
-                    <h3>Premium Domains</h3>
-                    <p>Access our exclusive collection of high-value domain names</p>
+                    <h3>Domains</h3>
                   </div>
                 </div>
                 <div className="col-md-4 mb-3">
                   <Link href="/networks" className="text-decoration-none">
                     <div className="text-bubble text-center">
                       <h3>Networks</h3>
-                      <p>Professional web development and hosting services</p>
                     </div>
                   </Link>
                 </div>
@@ -42,7 +40,6 @@ export default function Home() {
                   <Link href="/servers" className="text-decoration-none">
                     <div className="text-bubble text-center">
                       <h3>Servers</h3>
-                      <p>Dedicated assistance for all your digital needs</p>
                     </div>
                   </Link>
                 </div>
